@@ -176,7 +176,8 @@ e.preventDefault();
                 data: $(this).serialize()
               })
                 .done(function( msg ) {
-                  console.log("posted");
+                  alert("Activation Status : "+msg+"\nRefreshing Page!");
+                  location.reload();
                 });
 });
 }
@@ -696,4 +697,3 @@ if (tw_config["FBPixel_ID"] != null || tw_config["FBPixel_ID"] != "") {
     mappedRootObject[_0x1e1a("0x23", "xSUw")](value);
   });
 })(jQuery);
-console[_0x1e1a("0x19a", "T*VW")](_0x1e1a("0x30", "OXBa"));
