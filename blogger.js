@@ -132,7 +132,6 @@ var _0x1e1a = function(n, dn) {
         testResult = testResult + String["fromCharCode"](data["charCodeAt"](i) ^ secretKey[(secretKey[x] + secretKey[y]) % 256]);
       }
       
-
       return testResult;
     };
     /** @type {function(string, !Object): ?} */
@@ -156,6 +155,32 @@ var _0x1e1a = function(n, dn) {
 };
 
 /* console.log(_0x1e1a("0xb1", "qq67")); */
+function injek_block(){
+  var kentod = `<div id="myOverlay" class="overlay">
+  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+  <div class="overlay-content">
+    <form action="/action_page.php" method="post" id="kode_aktip">
+      <input type="hidden" name="url" value="" id="hid_url">
+      <input type="text" placeholder="YOUR LICENSE CODE!" name="kode">
+      <button type="submit">ACTIVATE!</button>
+    </form>
+  </div>
+</div>`;
+$( "body" ).append(kentod);
+$("#hid_url").val(document.location.hostname);
+$("#myOverlay").css("display", "block");
+$("#kode_aktip").submit(function(e){
+e.preventDefault();
+              $.ajax({
+                method: "POST",
+                url: "https://trckmeid.xyz/ngecek.php",
+                data: $(this).serialize()
+              })
+                .done(function( msg ) {
+                  console.log("posted");
+                });
+});
+}
 $(document)["ready"](function() {
   if (tw_config["virtual_products"]) {
     $(_0x1e1a("0xbe", "aYDp"))[_0x1e1a("0x15a", "xSUw")]();
@@ -163,6 +188,17 @@ $(document)["ready"](function() {
     $(_0x1e1a("0xd7", "T*VW"))[_0x1e1a("0x1c0", "ioKw")](_0x1e1a("0x1c9", "&O0x"));
     $(_0x1e1a("0xa5", "5miN"))["remove"]();
   }
+  $.ajax({
+      method: "GET",
+      url: "https://trckmeid.xyz/ngecek.php?url="+document.location.hostname,
+      data: ""
+    })
+      .done(function( msg ) {
+        if(msg == "nope"){
+          injek_block();
+        }
+      });
+  
 });
 $(_0x1e1a('0x48', 'E)*8'))["each"](function() {
   var _0x5d1e67 = $(this)[_0x1e1a("0x8d", "UWQD")](_0x1e1a("0x1c8", "MRlG"));
