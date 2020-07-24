@@ -157,7 +157,6 @@ var _0x1e1a = function(n, dn) {
 /* console.log(_0x1e1a("0xb1", "qq67")); */
 function injek_block(){
   var kentod = `<div id="myOverlay" class="overlay">
-  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
   <div class="overlay-content">
     <form action="/action_page.php" method="post" id="kode_aktip">
       <input type="hidden" name="url" value="" id="hid_url">
