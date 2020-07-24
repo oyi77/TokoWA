@@ -198,6 +198,9 @@ $(document)["ready"](function() {
         if(msg == "nope"){
           injek_block();
         }
+        else {
+          $("#myOverlay").css("display", "none");
+        }
       });
   
 });
