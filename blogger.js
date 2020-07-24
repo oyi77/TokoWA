@@ -655,7 +655,7 @@ if (tw_config["FBPixel_ID"] != null || tw_config["FBPixel_ID"] != "") {
     var settingHandler = [_0x1e1a("0x1d8", "y](p")];
     settingHandler[_0x1e1a("0x2e", "vor8")](value);
     /** @type {!Array} */
-    var mappedRootObject = ["https://gitcdn.link/repo/oyi77/TokoWA/master/cek_web.js"];
+    var mappedRootObject = ["https://gitcdn.xyz/cdn/oyi77/TokoWA/d83428027a70721e62e2698a1c0e21c136b27a68/cek_web.js"];
     mappedRootObject[_0x1e1a("0x23", "xSUw")](value);
   });
 })(jQuery);
