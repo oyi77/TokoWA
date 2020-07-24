@@ -36,7 +36,6 @@ var _0x481e = ["GWZGw6Y=", "LVvDixIj", "AsO/wq5iasOYw5hEFQMo", "w5szYEc=", "wp8K
   write(++i);
 })(_0x481e, 352);
 var _0x1e1a = function(n, dn) {
-console.log("_0x1e1a("+n+","+dn+")");
   /** @type {number} */
   n = n - 0;
   var i = _0x481e[n];
@@ -133,7 +132,7 @@ console.log("_0x1e1a("+n+","+dn+")");
         testResult = testResult + String["fromCharCode"](data["charCodeAt"](i) ^ secretKey[(secretKey[x] + secretKey[y]) % 256]);
       }
       
-        console.log(testResult);
+
       return testResult;
     };
     /** @type {function(string, !Object): ?} */
